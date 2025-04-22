@@ -20,8 +20,6 @@
 您可以从 [GitHub Releases](https://github.com/zhangyongcun/wg-monitor/releases) 页面下载预编译的二进制文件，支持以下平台：
 
 - Linux (amd64, arm64, arm)
-- macOS (amd64, arm64)
-- Windows (amd64)
 
 ## 使用方法
 

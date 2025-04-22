@@ -31,15 +31,6 @@ jobs:
           # Linux (arm)
           GOOS=linux GOARCH=arm go build -o dist/wg-monitor-linux-arm
           
-          # macOS (amd64)
-          GOOS=darwin GOARCH=amd64 go build -o dist/wg-monitor-darwin-amd64
-          
-          # macOS (arm64)
-          GOOS=darwin GOARCH=arm64 go build -o dist/wg-monitor-darwin-arm64
-          
-          # Windows (amd64)
-          GOOS=windows GOARCH=amd64 go build -o dist/wg-monitor-windows-amd64.exe
-          
           # 添加执行权限
           chmod +x dist/*
           
