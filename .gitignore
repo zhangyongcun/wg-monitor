@@ -1,0 +1,30 @@
+# 编译生成的文件
+wg-monitor
+wg-monitor-*
+
+# Go 相关忽略
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# 依赖目录
+/vendor/
+
+# IDE 相关文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 日志文件
+*.log
+
+# 临时文件
+tmp/
+temp/
