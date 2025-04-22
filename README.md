@@ -40,10 +40,10 @@ wg-monitor --ping <IP地址> --interface <接口名称> [--interval <间隔秒�
 
 ```bash
 # 基本用法
-sudo ./wg-monitor --ping 10.0.0.1 --interface wg0
+./wg-monitor --ping 10.0.0.1 --interface wg0
 
 # 自定义检查间隔和重试次数
-sudo ./wg-monitor --ping 10.0.0.1 --interface wg0 --interval 10 --retries 5
+./wg-monitor --ping 10.0.0.1 --interface wg0 --interval 10 --retries 5
 ```
 
 ## 安装为系统服务
@@ -52,12 +52,12 @@ sudo ./wg-monitor --ping 10.0.0.1 --interface wg0 --interval 10 --retries 5
 
 1. 将编译好的 wg-monitor 程序复制到 `/usr/local/bin/`：
    ```bash
-   sudo cp wg-monitor-linux-amd64 /usr/local/bin/
+   cp wg-monitor-linux-amd64 /usr/local/bin/
    ```
 
 2. 运行安装脚本：
    ```bash
-   sudo ./install_service.sh
+   ./install_service.sh
    ```
 
 3. 按照提示输入必要的参数（ping 地址、接口名称等）
@@ -102,7 +102,7 @@ GOOS=linux GOARCH=amd64 go build -o wg-monitor-linux-amd64
 
 ## 注意事项
 
-- 需要以 root 权限运行，因为 wg-quick 命令需要管理员权限
+- wg-quick 命令需要管理员权限运行
 - 确保系统已安装 Wireguard 工具（wg-quick）
 - 程序会忽略 wg-quick 命令可能返回的错误，确保重启过程不会因错误而中断
 
